@@ -1,0 +1,44 @@
+.loader{
+	position: relative;
+	width: 325px;
+	height: 7px;
+	margin: auto;
+}
+
+.loader__bg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 7px;
+	width: 325px;
+	border-radius: 7px;
+	background-color: #EDF1F4;
+}
+
+.loader__moving-line{
+	background-color: #732DD9;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 125px;
+	height: 7px;
+	border-radius: 10px;
+	animation-name: bounce;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+
+
+@keyframes bounce {
+	0%{
+		left:0px;
+	}
+	50%{
+		left:200px;
+	}
+	100%{
+		left:0px;
+	}
+}

@@ -1,0 +1,47 @@
+.houses-list__tile {
+	margin-bottom: 35px;
+	flex-basis: 370px;
+}
+
+.houses-list__tile__image {
+	height: 246px;
+	border-radius: 7px;
+	overflow: hidden;
+	background-position: center;
+	margin-bottom: 15px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 880px) {
+  .houses-list__tile {
+    width: 335px;
+  }
+
+  .houses-list__tile__image {
+    height: 224px;
+  }
+}
+
+.houses-list__tile h3 {
+	font-size: 18px;
+	font-weight: bold;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: #24272e;
+	margin-bottom: 10px;
+	line-height: 24px;
+}
+
+.houses-list__tile__price {
+	font-size: 16px;
+	font-weight: bold;
+	color: #24272e;
+}
+
+.houses-list__tile__price small {
+	font-size: 12px;
+	font-weight: 400;
+	color: #575d64;
+}

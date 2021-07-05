@@ -1,0 +1,44 @@
+.main-header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-bottom: 1px solid #E5E9ED;
+  transition: transform 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
+}
+
+.main-header.scroll-down {
+  transform: translate3d(0, -100%, 0);
+}
+ 
+.main-header.scroll-up {
+  transform: none;
+}
+
+.user-menu > button {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #E6C347;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 880px) { 
+  .main-header__logo {
+    overflow: hidden;
+    width: 40px;
+  }
+}
